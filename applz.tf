@@ -251,11 +251,6 @@ resource "azurerm_kubernetes_cluster" "default" {
     network_plugin = "azure"
   }
 
-#   service_principal {
-#     client_id     = var.clientId
-#     client_secret = var.clientSecret
-#   }
-
   role_based_access_control_enabled = true
 
   tags = {
